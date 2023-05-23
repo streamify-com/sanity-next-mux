@@ -8,16 +8,16 @@ import { deskTool } from 'sanity/desk'
 import { muxInput } from 'sanity-plugin-mux-input'
 
 // Go to https://www.sanity.io/docs/api-versioning to learn how API versioning works
-import { apiVersion, projectId } from './sanity/env'
+import { apiVersion, projectId, dataset } from './sanity/env'
 import schemaTypes from './sanity/schema/'
 
 
 export default defineConfig({
   basePath: '/studio',
   title: 'Streamify Studio',
-  projectId: "zduri0t6",
-  dataset: "production",
-  apiVersion: "2023-05-22",
+  projectId,
+  dataset,
+  apiVersion,
   // Add and edit the content schema in the './sanity/schema' folder
   schema: { types: schemaTypes },
   plugins: [
