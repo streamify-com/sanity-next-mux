@@ -5,7 +5,7 @@ const videoUpload = {
   fields: [
     {title: 'Title', name: 'title', type: 'string'},
     {
-      title: 'Video file',
+      title: 'Video Upload',
       name: 'video',
       type: 'mux.video',
     },
