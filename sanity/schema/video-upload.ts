@@ -1,7 +1,6 @@
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
-  title: 'Video blog post',
-  name: 'videoBlogPost',
+const videoUpload = {
+  title: 'Video Upload',
+  name: 'videoUpload',
   type: 'document',
   fields: [
     {title: 'Title', name: 'title', type: 'string'},
@@ -10,5 +9,7 @@ export default {
       name: 'video',
       type: 'mux.video',
     },
-  ],
+  ]
 }
+
+export default videoUpload;

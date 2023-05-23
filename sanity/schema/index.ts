@@ -1,3 +1,7 @@
-import videoBlogPost from './video-upload'
+import videoUpload from './video-upload'
+import pet from './pet'
+import project from './project-schema'
 
-export const schemaTypes = [videoBlogPost]
+const schemaTypes = [project, videoUpload, pet];
+
+export default schemaTypes;
